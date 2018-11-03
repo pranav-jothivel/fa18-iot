@@ -13,10 +13,13 @@
     
     <body>
         
-        <form>
-            <p>LED Commands:</p>
-            <input type="radio" name="control" value="ON">ON<br>
-            <input type="radio" name="control" value="OFF">OFF<br>
+        <h2>LED Commands:</h2>
+        <form action="https://api.particle.io/v1/devices/270039000b51353432383931/">
+            <input type="radio" name="control" value="on">LED On
+            <br>
+            <input type="radio" name="control" value="off">LED Off
+            <br>
+            <br>
             <input type="submit" value="Submit"/>
         </form>
         
