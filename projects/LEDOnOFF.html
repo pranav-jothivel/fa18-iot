@@ -1,30 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-	<meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Photon Web LED Control | Pranav Jothivel | Github Web Control</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel='shortcut icon' type='image/x-icon' href='/static/img/favicon.ico' />
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css" />
-    <script type="text/javascript" src="/static/js/apple-web-app-window-control-1.0.1.min.js"></script>
-    <script type="text/javascript" src=""></script>
-    <script type="text/javascript" src=""></script> 
-    </head>
     
-    <body>
+	<head>
+	    
+	    
+    	<meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
-        <h2>LED Commands:</h2>
-        <form action="https://api.particle.io/v1/devices/270039000b51353432383931/led?access_token=e36620d27d22481f2c5019a74ea4bd935d0baa91" method="POST">
-            <input type="radio" name="control" value="on">LED On
-            <br>
-            <input type="radio" name="control" value="off">LED Off
-            <br>
-            <br>
-            <input type="submit" value="Submit"/>
-        </form>
         
-    </body>
+        <title>Photon Web Connected LED Control | Pranav Jothivel | Github Web Control</title>
+        
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="white">
+        <!--<meta name="apple-mobile-web-app-title" content="AppTitle">-->
+        
+        
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/img/icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/img/icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/img/icon/favicon-16x16.png">
+        <link rel="shortcut icon" href="/static/img/icon/favicon.ico">
+        
+        
+        <!--<link rel="manifest" href="/static/plugins/site.webmanifest">-->
+        <link rel="mask-icon" href="/static/img/icon/safari-pinned-tab.svg" color="#5bbad5">
+        
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-config" content="/static/plugins/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        
+        <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css" />
+        
+        
+        <script type="text/javascript" src="/static/js/apple-web-app-window-link-control-1.0.1.min.js"></script>
+        <!--<script type="text/javascript" src=""></script>-->
+        <!--<script type="text/javascript" src=""></script> -->
+    
+    </head>
+	
+	<body>
+	    
+	    <h2>LED Commands:</h2>
+            <form action="https://api.particle.io/v1/devices/270039000b51353432383931/led?access_token=e36620d27d22481f2c5019a74ea4bd935d0baa91" method="POST">
+                <input type="radio" name="control" value="on">LED On
+                <br>
+                <input type="radio" name="control" value="off">LED Off
+                <br>
+                <br>
+                <input type="submit" value="Submit"/>
+            </form>
+	    
+	    
+	    
+	</body>
+	
 </html>
+
+
