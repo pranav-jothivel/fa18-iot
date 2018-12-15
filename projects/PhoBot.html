@@ -8,7 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         
         
-        <title>FA18-IoT Projects | Pranav Jothivel | Github Web Control</title>
+        <title>PhoBot | Pranav Jothivel | Github Web Control</title>
         
         
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,31 +35,51 @@
         
         
         <link rel="stylesheet" type="text/css" media="screen" href="/static/css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="/fa18-iot/plugins/css/phobot.main.css" />
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         
         
         <script type="text/javascript" src="/static/js/apple-web-app-window-link-control-1.0.1.min.js"></script>
-        <!--<script type="text/javascript" src=""></script>-->
+        <script type="text/javascript" src="/fa18-iot/plugins/js/phobot-control.1.0.1.min.js"></script>
+        <script type="text/javascript" src="/fa18-iot/plugins/js/justgage-1.0.1.min.js"></script>
+        <script type="text/javascript" src="/fa18-iot/plugins/js/raphael-1.0.1.min.js"></script>
         <!--<script type="text/javascript" src=""></script> -->
     
     </head>
 	
 	<body>
-	    
-	    <div id="">
-	        
-	       <h1>Projects:</h1>
-    	        <ul>
-    			    <li><a href="/fa18-iot/projects/LEDOnOff">Photon LED Control</a></li>
-    			    <li><a href="/fa18-iot/projects/MorseSender">Morse Code Sender</a></li>
-    			    <li><a href="/fa18-iot/projects/PhoBot">Robot</a></li>
-    			
-    			
-    		    </ul>
-	        
-        </div>
-		
-	</body>
+        <table align="center">
+            <tr>
+                <td class="meters">
+                    <div id="voltsGauge" ></div>
+                </td>
+                <td class="meters">
+                    <div id="distanceGauge" ></div>
+                </td>
+            </tr>
+        </table>
 
+        <table align="center">
+            <tr>
+                <td></td>
+                <td class="controls" onClick="sendControl('F-100');">W</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td  class="controls" onClick="sendControl('L-50');">A</td>
+                <td  class="controls" onClick="sendControl('S');">S</td>
+                <td  class="controls" onClick="sendControl('R-50');">D</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td  class="controls" onClick="sendControl('B-75');">Z</td>
+                <td></td>
+            </tr>
+        </table>
+		<script src="/fa18-iot/plugins/js/roboticgauge.js"></script>
+	</body>
+	
 	<footer>
 	        
        	<div id="footerlinks">
@@ -76,3 +96,5 @@
     </footer>
 	
 </html>
+
+
