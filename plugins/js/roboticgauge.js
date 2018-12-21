@@ -23,5 +23,5 @@ function getDistanceReading(){
    	$.get(distance_url, {access_token: accessToken}, callbackDistance);
 }
 
-getVoltsReading();
-getDistanceReading();
+// getVoltsReading();
+// getDistanceReading();
